@@ -64,9 +64,9 @@ stages:
         name: Run tests
         command: |
           docker-compose ps
-          curl --fail -i http://localhost:8000/
-          curl --fail -i http://localhost:8000/v1/co2?countryCode=FR
-          curl --fail -i http://localhost:8000/v1/exchanges?countryCode=FR
-          curl --fail -i http://localhost:8000/v1/production?countryCode=FR
-          curl --fail -i http://localhost:8000/v1/price?countryCode=FR
-          curl --fail -i http://localhost:8000/v2/history?countryCode=FR
+          curl --fail -i http://localhost:8001/
+          curl --fail -i http://localhost:8001/v1/co2?countryCode=FR
+          curl --fail -i http://localhost:8001/v1/exchanges?countryCode=FR
+          curl --fail -i http://localhost:8001/v1/production?countryCode=FR
+          curl --fail -i http://localhost:8001/v1/price?countryCode=FR
+          curl --fail -i http://localhost:8001/v2/history?countryCode=FR
